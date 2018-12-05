@@ -252,6 +252,10 @@ namespace HealthAndAuditShared
                     }
                 }
             }
+            else
+            {
+                Thread.Sleep(2000);
+            }
         }
 
         public void ReloadRulesForAnalyzer(string analyzerProgramName)
@@ -426,6 +430,10 @@ namespace HealthAndAuditShared
 #endif
                         }
                     });
+                }
+                else
+                {
+                    AnalyzerChangeState(State.Stopped);
                 }
             }
 

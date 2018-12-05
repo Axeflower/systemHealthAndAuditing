@@ -135,7 +135,7 @@ namespace AnalyzerEngineConsole
                     while (ShallRun)
                     {
                         SwitchList();
-                        var snapToSave= new StatusSnapshot();
+                        var snapToSave = new StatusSnapshot();
                         snapToSave.GeneratedUTC = DateTime.UtcNow;
                         foreach (var info in AnalyzerInfo)
                         {
